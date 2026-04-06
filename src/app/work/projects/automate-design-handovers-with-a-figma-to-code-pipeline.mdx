@@ -1,0 +1,39 @@
+---
+title: "EcoSim: Multi-Agent AI Simulation with Real-Time Visualization"
+publishedAt: "2026-04-01"
+summary: "A multi-agent simulation platform with emergent social dynamics, dual-layer LLM architecture, and real-time visualization — built to reduce AI inference costs by 4,500×."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/cover-02.jpg"
+team:
+  - name: "Danchen Luo"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/danchen-luo"
+link: "https://github.com/danchenluo9/EcoSim"
+---
+
+## Overview
+
+EcoSim is a multi-agent simulation platform that models emergent social dynamics between autonomous agents. It integrates a dual-layer LLM architecture — one layer for high-level strategic planning, another for generating natural agent dialogues — while keeping costs and latency under control through deterministic rule-based logic.
+
+## Key Features
+
+- **Dual-Layer LLM Architecture**: Separates strategic decision-making (LLM-driven) from routine behavior (deterministic rules), enabling stable and cost-efficient simulation at scale.
+- **Real-Time Visualization**: A React + Vite frontend renders agent states, interactions, and emergent behaviors live as the simulation runs.
+- **Non-Blocking Multi-Threaded Backend**: A Java backend with a non-blocking, multi-threaded architecture slashed main-thread block time by over 99% and accelerated batch processing by 5×.
+- **Cost Optimization**: Resolved the high cost and unpredictability of pure-LLM agents by balancing AI-driven intents with low-cost deterministic rules — reducing inference costs by 4,500×.
+
+## Technologies Used
+
+- **Java** with SLF4J/Logback and Maven for the backend simulation engine
+- **Anthropic Claude API** for LLM-driven agent behavior
+- **React + Vite** for the real-time frontend dashboard
+
+## Challenges and Learnings
+
+The core challenge was making LLM-powered agents viable at scale. Pure LLM agents are expensive and unpredictable — every decision call adds latency and cost. The solution was a hybrid architecture where deterministic rules handle routine agent behavior, and LLM calls are reserved for high-level strategic decisions. This kept the simulation stable and reduced costs dramatically without sacrificing emergent complexity.
+
+## Outcome
+
+EcoSim successfully runs continuous multi-agent simulations with real-time visualization, stable emergent dynamics, and a 4,500× reduction in LLM inference costs compared to a naive pure-LLM approach.

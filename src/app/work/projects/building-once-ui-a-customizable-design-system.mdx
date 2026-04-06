@@ -1,0 +1,40 @@
+---
+title: "QuestApp: Full-Stack Task Marketplace Platform"
+publishedAt: "2026-04-08"
+summary: "A secure, full-lifecycle task marketplace built with Java, Spring Boot, and React — featuring JWT authentication, role-based access control, and agile team delivery."
+images:
+  - "/images/projects/project-01/cover-03.jpg"
+  - "/images/projects/project-01/cover-04.jpg"
+team:
+  - name: "Danchen Luo"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/danchen-luo"
+link: "https://github.com/danchenluo9/QuestApp"
+---
+
+## Overview
+
+QuestApp is a comprehensive task marketplace platform where users can post, claim, and complete tasks. The platform supports multiple user roles with fine-grained access control, secure authentication, and a clean REST API powering a React frontend.
+
+## Key Features
+
+- **Role-Based Access Control (RBAC)**: Enforced strict role separation between task posters, task claimers, and admins — with business logic audited and hardened to prevent privilege escalation and lifecycle conflicts.
+- **JWT Authentication**: Secured all API endpoints with JWT Bearer token authentication, ensuring stateless, scalable session management.
+- **Full Task Lifecycle Management**: Modeled the complete task lifecycle from creation through assignment, completion, and dispute resolution — with conflict-free state transitions.
+- **Agile Team Delivery**: Led the team through sprint planning, integration protocols, and code reviews to deliver the platform on schedule.
+
+## Technologies Used
+
+- **Java + Spring Boot** for the backend REST API
+- **H2 Database** for lightweight embedded persistence
+- **React + Vite** for the frontend UI
+- **JWT Bearer Tokens** for authentication and authorization
+
+## Challenges and Learnings
+
+The most critical challenge was getting the business logic right. Early peer designs had subtle flaws in task lifecycle state machines and RBAC enforcement that could lead to data corruption or unauthorized access. Auditing and rectifying these issues required careful modeling of all possible state transitions and role interactions before writing a single line of implementation code.
+
+## Outcome
+
+QuestApp was delivered on schedule with a robust, conflict-free operational workflow. The platform handles secure multi-role interactions across the full task lifecycle with clean separation of concerns between frontend and backend.

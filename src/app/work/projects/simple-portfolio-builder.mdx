@@ -1,0 +1,41 @@
+---
+title: "SnapLedger: AI-Powered Receipt Recognition & Expense Tracker"
+publishedAt: "2025-12-01"
+summary: "An end-to-end receipt OCR and expense tracking system that automatically extracts item names and prices from scanned receipts into an editable visual table."
+images:
+  - "/images/projects/project-01/cover-01.jpg"
+  - "/images/projects/project-01/image-01.jpg"
+team:
+  - name: "Danchen Luo"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/danchen-luo"
+link: "https://github.com/danchenluo9/SnapLedger"
+---
+
+## Overview
+
+SnapLedger is an end-to-end receipt recognition and expense tracking system. Users upload scanned receipt images, and the system automatically extracts item names and prices using computer vision and OCR — presenting the results in an interactive, editable table.
+
+## Key Features
+
+- **Automated Receipt Parsing**: Uses OpenCV for image preprocessing and PaddleOCR for text extraction, handling a wide variety of receipt formats and layouts.
+- **Editable Visual Table**: Extracted data is rendered in an IPyWidgets-powered interactive table, allowing users to review and correct entries before saving.
+- **Modular Data Pipeline**: Highly modular parsing pipeline with clear separation between image processing, OCR, and data normalization stages — making it easy to extend or swap components.
+- **Production-Level Reliability**: Rigorous error-handling protocols and comprehensive unit tests ensure the system handles malformed inputs, low-quality scans, and edge cases gracefully.
+
+## Technologies Used
+
+- **Python** as the primary language
+- **OpenCV** for image preprocessing and normalization
+- **PaddleOCR** for optical character recognition
+- **Pandas** for data structuring and export
+- **IPyWidgets** for the interactive frontend table
+
+## Challenges and Learnings
+
+Receipt formats vary wildly — different fonts, layouts, noise levels, and languages. Building a robust parsing pipeline required careful preprocessing (contrast enhancement, deskewing, noise reduction) before OCR, plus a flexible post-processing layer to normalize extracted text into structured line items. Comprehensive unit testing at each pipeline stage was essential to catch regressions early.
+
+## Outcome
+
+SnapLedger reliably extracts structured expense data from scanned receipts with production-level error handling, giving users an editable view of their expenses with minimal manual effort.

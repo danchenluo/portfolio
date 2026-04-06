@@ -1,0 +1,40 @@
+---
+title: "ChatPDF: Document-Grounded AI Question Answering"
+publishedAt: "2025-12-15"
+summary: "A full-stack web app that lets users upload PDFs and have intelligent, context-aware conversations with their documents via a real-time chat interface powered by LLaMA 3."
+images:
+  - "/images/projects/project-01/cover-02.jpg"
+  - "/images/projects/project-01/image-02.jpg"
+team:
+  - name: "Danchen Luo"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/danchen-luo"
+link: "https://github.com/danchenluo9/ChatPDF"
+---
+
+## Overview
+
+ChatPDF is a document-grounded AI question-answering web application. Users upload a PDF, and the app enables intelligent, context-aware conversations with the document's content through a real-time chat interface — all powered by a locally-running LLaMA 3 model via Ollama.
+
+## Key Features
+
+- **PDF Ingestion**: Extracts and chunks text from uploaded PDFs using PyMuPDF, preparing it for context-aware retrieval.
+- **LLM-Powered Q&A**: Integrates LLaMA 3 (via Ollama) to answer user questions grounded in the uploaded document's content — not general knowledge.
+- **Real-Time Chat Interface**: A clean HTML/CSS/JS frontend delivers a responsive chat experience with streaming responses.
+- **Flask Backend API**: A lightweight Flask server handles PDF processing, context retrieval, and LLM communication, bridging frontend and AI backend cleanly.
+
+## Technologies Used
+
+- **Python + Flask** for the backend API
+- **PyMuPDF** for PDF text extraction
+- **LLaMA 3 via Ollama** for local LLM inference
+- **HTML / CSS / JavaScript** for the frontend chat interface
+
+## Challenges and Learnings
+
+This project was built under a tight deadline with no prior full-stack experience — requiring rapid self-teaching of Flask, frontend development, and generative AI integration simultaneously. The key insight was keeping the architecture simple: a thin Flask API layer, straightforward context injection into the LLM prompt, and a minimal but functional frontend. Shipping something working fast mattered more than over-engineering.
+
+## Outcome
+
+ChatPDF delivers accurate, document-grounded answers to user questions with a clean real-time chat interface — built from scratch in a short timeframe by bridging frontend, backend, and local LLM inference.
